@@ -16,7 +16,7 @@ def checkout(request):
         return render(request, "main/checkout.html")
 
     if request.method == "POST":
-        context = { "amount": 1000.00, "order_id": "HHBNHHJH7HVHJB", "return_url": "http://127.0.0.1:8000/return" }
+        context = { "amount": 1000.00, "order_id": "HHBNHHJH7HVHJB", "return_url": "https://enairagwtest.pythonanywhere.com/return" }
         headers = {
             "Content-Type": "application/json",
             "Accept": "application/json",
